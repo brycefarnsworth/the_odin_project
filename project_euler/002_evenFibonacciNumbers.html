@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+	<title>Even Fibonacci Numbers</title>
+</head>
+<body>
+	<script>
+		var prev2 = 1;
+		var prev1 = 2;
+		var number = 3;
+		
+		var total = 2;
+		
+		while( number < 4000000 ) {
+			if( number % 2 === 0 ) {
+				total += number;
+			}
+			prev2 = prev1;
+			prev1 = number;
+			number = prev2 + prev1;
+		}
+		
+		console.log("The sum of all even Fibonacci numbers below 4 million is " +total);
+	</script>
+</body>

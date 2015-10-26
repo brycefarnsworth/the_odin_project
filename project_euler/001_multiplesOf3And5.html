@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<head>
+	<title>Multiples of 3 and 5</title>
+</head>
+<body>
+	<script>
+		var total = 0;
+		
+		for( var i = 0; i < 1000; i++ ) {
+			if( i % 3 === 0 || i % 5 === 0 ) {
+				total += i;
+			}
+		}
+		
+		console.log("The sum of all multiples of 3 or 5 below 1000 is " +total);
+	</script>
+</body>
